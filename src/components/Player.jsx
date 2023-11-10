@@ -14,7 +14,7 @@ const Player = ({ playerName, playerSymbol, activePlayer, getPlayer }) => {
 
   useEffect(() => {
     if (activePlayer) {
-      getPlayer(player); // Pass the player's name when they are the active player
+      getPlayer(player); // Pass player's name and symbol when they are the active player
     }
   }, [activePlayer, player]);
 
